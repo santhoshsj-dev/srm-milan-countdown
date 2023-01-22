@@ -2,7 +2,7 @@
 
 setTimeout(function(){
     $('.preloader').fadeToggle();
-}, 30000);
+}, 3000);
 
 
 //flip.js Codes
