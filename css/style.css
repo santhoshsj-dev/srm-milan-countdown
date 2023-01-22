@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "edo";
+    src: url(../assets/edo.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.preloader {
+    background: #000 url(../milan3.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    visibility: hidden;
+}
+
+body{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.932);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero img{
+    width: 60%;
+}
+
+.counter{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.tick {
+    width: 100%;
+    font-size: 1rem;
+    white-space: nowrap;
+    font-family: arial, sans-serif;
+}
+
+.tick-flip,
+.tick-text-inline {
+    font-size: 2.5em;
+}
+
+.tick-label {
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.tick-char {
+    width: 1.5em;
+}
+
+.tick-text-inline {
+    display: inline-block;
+    text-align: center;
+    min-width: 1em;
+}
+
+.tick-text-inline+.tick-text-inline {
+    margin-left: -.325em;
+}
+
+.tick-group {
+    margin: 0 .5em;
+    text-align: center;
+}
+
+.tick-text-inline {
+    color: #595d63 !important;
+}
+
+.tick-label {
+    color: #595d63 !important;
+}
+
+.tick-flip-panel {
+    color: #fff !important;
+}
+
+.tick-flip {
+    font-family: clearsans-regular, sans-serif !important;
+}
+
+.tick-flip-panel-text-wrapper {
+    line-height: 1.4 !important;
+}
+
+.tick-flip-panel {
+    background-color: #3c3e3c !important;
+}
+
+.tick-flip {
+    border-radius: 0.12em !important;
+}
+
+
+.type{
+    margin: 30px 0;
+    height: 50px;
+    font-family: "edo";
+    font-size: 3rem;
+}
+
+.type a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.social-icon ul li{
+    list-style: none;
+    width: 35px;
+    height:35px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon ul{
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon ul li a{
+    margin-top: 1.5px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.social-icon ul li a i{
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon ul li:hover{
+    background-color: red;
+    transition: 0.2s ease-in-out;
+}
+
+.social-icon ul li:hover a{
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
