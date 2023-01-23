@@ -12,7 +12,7 @@
   background-size: 20%;
 }
 
-#myVideo{
+#myVideo {
   position: fixed;
   min-width: 120%;
   min-height: 120%;
@@ -58,7 +58,6 @@ body {
   width: 100%;
   font-size: 1rem;
   white-space: nowrap;
-  font-family: arial, sans-serif;
 }
 
 .tick-flip,
@@ -95,8 +94,8 @@ body {
 }
 
 .tick-label {
-  font-size: 0.7rem;
-  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #ffffff !important;
 }
@@ -124,6 +123,7 @@ body {
 
 
 .type {
+  user-select: none;
   margin: 30px 0;
   height: 50px;
   font-family: "edo";
@@ -153,7 +153,7 @@ body {
   gap: 20px;
 }
 
-.social-icon ul li a {
+.social-icon ul a li {
   margin-top: 1.5px;
   color: rgb(0, 0, 0);
   font-size: 1rem;
@@ -169,7 +169,10 @@ body {
   transition: 0.2s ease-in-out;
 }
 
-.yt:hover a {
+.yt:hover,
+.insta:hover,
+.fb:hover,
+.mail:hover {
   color: white;
   transition: 0.2s ease-in-out;
 }
@@ -179,18 +182,8 @@ body {
   transition: 0.2s ease-in-out;
 }
 
-.insta:hover a {
-  color: white;
-  transition: 0.2s ease-in-out;
-}
-
 .fb:hover {
   background-color: rgb(39, 86, 240);
-  transition: 0.2s ease-in-out;
-}
-
-.fb:hover a {
-  color: white;
   transition: 0.2s ease-in-out;
 }
 
@@ -199,12 +192,17 @@ body {
   transition: 0.2s ease-in-out;
 }
 
-.mail:hover a {
-  color: white;
-  transition: 0.2s ease-in-out;
+footer {
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:90px 10% 0px 5%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.8rem;
 }
-
-
 
 @media (max-width: 576px) {
 
