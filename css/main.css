@@ -193,15 +193,19 @@ body {
 }
 
 footer {
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:90px 10% 0px 5%;
+  position: fixed;
+  bottom: 0;
   text-align: center;
+  left: 0;
+  right: 0;
   color: #fff;
   font-family: 'Roboto Slab', serif;
   font-size: 0.8rem;
+}
+
+footer p{
+  padding: 20px 40px;
+  
 }
 
 @media (max-width: 576px) {
