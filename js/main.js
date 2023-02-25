@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   popactive();
 
-  // setTimeout(function () {
+   setTimeout(function () {
 
-  //   popup.style.display = "none";
-  //   video.classList.remove("active");
-  //   content.classList.remove("active");
-  // }, 10000);
+     popup.style.display = "none";
+    video.classList.remove("active");
+     content.classList.remove("active");
+  }, 10000);
 
   closeBtn.addEventListener("click", function () {
 
