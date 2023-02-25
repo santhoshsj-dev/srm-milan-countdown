@@ -203,9 +203,9 @@ footer {
   font-size: 0.8rem;
 }
 
-footer p{
+footer p {
   padding: 20px 40px;
-  
+
 }
 
 @media (max-width: 576px) {
@@ -267,4 +267,107 @@ footer p{
     gap: 20px;
   }
 
+}
+
+
+
+/* Blur */
+
+.active {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.popup {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px 30px;
+  z-index: 20;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  display: none;
+  transition: transform .2s;
+
+
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0px 0px 20px 5px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+}
+
+@media (max-width:577px) {
+
+  .popup{
+    width: 90%;
+  }
+}
+
+
+.popactive {
+  display: block;
+  transition: ease-in-out 2s;
+}
+
+.popup-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.popup-content>button {
+  cursor: pointer;
+  margin-top: 8px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #121212;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.popup-content>button:hover {
+  background-color: white;
+  color: #121212;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  outline: none;
+  padding: 1px 5px;
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0px 0px 20px 5px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+}
+
+.close>button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+canvas{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
 }

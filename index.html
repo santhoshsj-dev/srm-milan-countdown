@@ -14,7 +14,7 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <!--Roboto Slab Font-->
+  <!--Roboto Slab Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -30,14 +30,31 @@
   <title>Milan - National Level Cultural Fest</title>
 </head>
 
-<>
+<body>
 
   <div class="preloader" id="preloader"></div>
+
+  <canvas id="my-canvas"></canvas>
+
+  <!-- Pop Up Model -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <img class="ticket" src="assets/ticket.png" alt="ticket-icon">
+      <h5>Ticket Booking live on</h5>
+      <h1>26th Feburary 2023</h1>
+      
+    </div>
+    <div class="close" id="close">
+      <button>&times;</button>
+    </div>
+
+  </div>
+
 
   <video autoplay muted loop id="myVideo" src="./assets/Milan_720.mp4" type="video/mp4">
   </video>
 
-  <div class="content">
+  <div class="content" id="blur">
     <div class="hero">
 
       <img src="assets/milan23.png" alt="milan logo">
@@ -94,9 +111,10 @@
   <!--Essential Javascripts-->
   <script src="./js/jquery-3.6.0.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
   <script src="js/flip.min.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="js/main.js"></script>
 
-  </body>
+</body>
 
 </html>
